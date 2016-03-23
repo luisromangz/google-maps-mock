@@ -1,6 +1,6 @@
 {
     "name": "google-maps-mock",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "google-maps-mock.js",
     "ignore": [
         "bower.json",
