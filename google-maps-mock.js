@@ -1,5 +1,16 @@
 window.google = {
 	maps: {
+		event: {
+			addDomListener: function(obj, event, cb) {
+				return {
+					Ob: obj,
+					R: event,
+					U: 1,
+					id: 1,
+					j: cb
+				}
+			}
+		},
 		LatLng: function(lat, lng) {
 			return {
 				latitude: parseFloat(lat),
