@@ -1,8 +1,8 @@
-;(function(window){
+module.exports = (function (window) {
 	window.google = {
 		maps: {
 			event: {
-				addDomListener: function(obj, event, cb) {
+				addDomListener: function (obj, event, cb) {
 					return {
 						Ob: obj,
 						R: event,
@@ -12,42 +12,50 @@
 					}
 				}
 			},
-			LatLng: function(lat, lng) {
+			LatLng: function (lat, lng) {
 				return {
 					latitude: parseFloat(lat),
 					longitude: parseFloat(lng),
 
-					lat: function() { return this.latitude; },
-					lng: function() { return this.longitude; }
+					lat: function () {
+						return this.latitude;
+					},
+					lng: function () {
+						return this.longitude;
+					}
 				};
 			},
-			LatLngBounds: function(ne, sw) {
+			LatLngBounds: function (ne, sw) {
 				return {
-					getSouthWest: function() { return sw; },
-					getNorthEast: function() { return ne; }
+					getSouthWest: function () {
+						return sw;
+					},
+					getNorthEast: function () {
+						return ne;
+					}
 				};
 			},
-			OverlayView: function() {
+			OverlayView: function () {
 				return {};
 			},
-			InfoWindow: function() {
+			InfoWindow: function () {
 				return {};
 			},
-			Marker: function() {
+			Marker: function () {
 				return {};
 			},
-			MarkerImage: function() {
+			MarkerImage: function () {
 				return {};
 			},
-			Map: function() {
+			Map: function () {
 				return {};
 			},
-			Point: function() {
+			Point: function () {
 				return {};
 			},
-			Size: function() {
+			Size: function () {
 				return {};
 			}
 		}
 	};
-})(window);
+});
