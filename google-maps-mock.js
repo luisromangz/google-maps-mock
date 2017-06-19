@@ -33,7 +33,7 @@ module.exports = (function (window) {
 					getNorthEast: function () {
 						return ne;
 					},
-					getCenter() {
+					getCenter: function () {
 						return {
 							lat: function () {
 								return (sw.lat() + ne.lat()) / 2;
