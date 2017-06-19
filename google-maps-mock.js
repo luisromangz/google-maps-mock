@@ -32,6 +32,16 @@ module.exports = (function (window) {
 					},
 					getNorthEast: function () {
 						return ne;
+					},
+					getCenter() {
+						return {
+							lat: function () {
+								return (sw.lat() + ne.lat()) / 2;
+							},
+							lng: function () {
+								return (sw.lng() + ne.lng()) / 2;
+							}
+						};
 					}
 				};
 			},
