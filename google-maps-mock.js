@@ -68,7 +68,16 @@ module.exports = (function (window) {
 			},
 			Map: function () {
 				return {
-					fitBounds: function () {}
+					center: null,
+					setCenter: function (center) {
+						this.center = center;
+					},
+					fitBounds: function (bounds) {
+						this.center = bounds.getCenter();
+					},
+					getCenter: function () {
+						return this.center;
+					}
 				};
 			},
 			Point: function () {
