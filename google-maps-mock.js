@@ -9,7 +9,7 @@ module.exports = (function (window) {
 						U: 1,
 						id: 1,
 						j: cb
-					}
+					};
 				}
 			},
 			LatLng: function (lat, lng) {
@@ -58,7 +58,9 @@ module.exports = (function (window) {
 				return {};
 			},
 			Map: function () {
-				return {};
+				return {
+					fitBounds: function () {}
+				};
 			},
 			Point: function () {
 				return {};
