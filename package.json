@@ -1,0 +1,23 @@
+{
+  "name": "google-maps-mock",
+  "version": "1.0.0",
+  "description": "Mocks the Google Maps Javascript API",
+  "main": "google-maps-mock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisromangz/google-maps-mock.git"
+  },
+  "keywords": [
+    "mocks",
+    "google-maps"
+  ],
+  "author": "droidenator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisromangz/google-maps-mock/issues"
+  },
+  "homepage": "https://github.com/luisromangz/google-maps-mock#readme"
+}
